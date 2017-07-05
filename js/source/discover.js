@@ -1,5 +1,6 @@
 'use strict';
 
+import Button from './components/Button'
 import Logo from './components/Logo';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -20,6 +21,7 @@ ReactDOM.render(
     <div style={{ display: 'inline:block', background: 'purple'}}>
       <Logo/>
     </div>
+    <div>onClick<Button onClick={ () => {alert('alert')} }></Button></div>
   </div>
   ,
   document.getElementById('pad')
