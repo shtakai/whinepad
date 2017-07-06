@@ -3,11 +3,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function Button(props) {
-  //const cssclassess = classNames('Button', props.className)
-  //return props.href
-    //? <a {...props} className={cssclassess} />
-    //: <Button {...props} className={cssclassess} />
-  return <p>test</p>
+  const cssclasses = classNames('Button', props.className)
+  return props.href
+    ? <a {...props} className={cssclasses}/>
+    : <button {...props} className={cssclasses}/>
 }
 
 Button.propTypes = {
